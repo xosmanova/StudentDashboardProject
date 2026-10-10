@@ -16,7 +16,7 @@ import services
 def render_header() -> None:
     """Renders the dashboard page header and branding."""
     st.title(f"{config.APP_ICON} {config.APP_TITLE}")
-    st.caption(f"{config.APP_SUBTITLE} | UniversityDB (MSSQL)")
+    st.caption(f"{config.APP_SUBTITLE} | {database.get_active_database_mode()}")
     st.divider()
 
 

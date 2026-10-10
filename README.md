@@ -108,3 +108,28 @@ python -m unittest test_services.py
 streamlit run app.py
 ```
 Tətbiq brauzerinizdə `http://localhost:8501` ünvanında açılacaqdır.
+
+---
+
+## 🌐 Streamlit Community Cloud-da Canlı Deploy (Müəllimə Təqdimat Üçün)
+
+Layihə buludda sıfır konfiqurasiya ilə deploy oluna bilməsi üçün xüsusi olaraq hazırlanmışdır (**Dual-Mode Database Architecture**):
+
+1. **GitHub Reposuna Push edin:**
+   ```bash
+   git add .
+   git commit -m "Configure cloud deployment support"
+   git push origin master
+   ```
+
+2. **Streamlit Cloud Hesabına Daxil Olun:**
+   - [share.streamlit.io](https://share.streamlit.io) saytına daxil olun.
+   - **Continue with GitHub** seçin.
+
+3. **Yeni Tətbiq (New App) Yaradın:**
+   - **Repository:** `xosmanova/StudentDashboardProject`
+   - **Branch:** `master`
+   - **Main file path:** `app.py`
+   - **Deploy!** düyməsinə klikləyin.
+
+4. 1-2 dəqiqə ərzində saytınız bütün dünyada əlçatan olan pulsuz domen linki alacaq (məsələn: `https://studentdashboardproject.streamlit.app`) və həmin linki birbaşa müəlliminizə təqdim edə bilərsiniz!
